@@ -1,9 +1,6 @@
 /**
-* Cristina Ruiz Martin
+* By: Harish & Surya Krishna
 * ARSLab - Carleton University
-*
-* ReceiverCadmium:
-* Cadmium implementation of CD++ Receiver atomic model
 */
 
 #ifndef HALF_ADDER_AND_CAD_HPP

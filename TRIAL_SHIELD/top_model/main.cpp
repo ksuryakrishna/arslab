@@ -1,10 +1,6 @@
 /**
-* By: Ben Earle
+* By: Harish & Surya Krishna
 * ARSLab - Carleton University
-*
-* Analog Input:
-* This main file constructs the do simple line following project, using a Seed Bot Shield.
-* Its purpose is to demonstrate how to use all of the port IO models in RT_ARM_MBED.
 */
 
 #include <iostream>

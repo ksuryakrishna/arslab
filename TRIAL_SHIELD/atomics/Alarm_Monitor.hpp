@@ -1,15 +1,8 @@
 /**
-* By: Ben Earle
+* By: Harish & Surya Krishna
 * ARSLab - Carleton University
-*
-* Seeed Bot Driver:
-* This model will do simple line following using a Seed Bot Shield.
-* Its purpose is to demonstrate how to use all of the port IO models in RT_ARM_MBED.
-*
-* Note: The 'SCARED_OF_THE_DARK' macro will read from a Grove light sensor on 
-*   analog port A5 and stop the car if the reading is less then 0.3.
-* It must be defined here and in main if being used.
 */
+
 #ifndef BOOST_SIMULATION_PDEVS_ALARM_MONITOR_HPP
 #define BOOST_SIMULATION_PDEVS_ALARM_MONITOR_HPP
 
