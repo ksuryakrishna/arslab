@@ -1,0 +1,50 @@
+In file included from main.cpp:34:0:
+../atomics/Alarm_Monitor.hpp:104:48: error: ‘bags’ has not been declared
+               get_messages<typename defs::out>(bags).push_back(bool);
+                                                ^~~~
+../atomics/Alarm_Monitor.hpp:104:52: error: ISO C++ forbids declaration of ‘get_messages’ with no type [-fpermissive]
+               get_messages<typename defs::out>(bags).push_back(bool);
+                                                    ^
+../atomics/Alarm_Monitor.hpp:104:52: error: template-id ‘get_messages<Alarm_defs::out>’ in declaration of primary template
+../atomics/Alarm_Monitor.hpp:104:52: error: expected ‘;’ at end of member declaration
+../atomics/Alarm_Monitor.hpp:104:53: error: expected unqualified-id before ‘.’ token
+               get_messages<typename defs::out>(bags).push_back(bool);
+                                                     ^
+../atomics/Alarm_Monitor.hpp:105:15: error: expected unqualified-id before ‘return’
+               return bags;
+               ^~~~~~
+../atomics/Alarm_Monitor.hpp: In member function ‘void Alarm_Mon<TIME>::external_transition(TIME, cadmium::make_message_bags<std::tuple<Alarm_defs::inp1, Alarm_defs::inp2> >::type)’:
+../atomics/Alarm_Monitor.hpp:81:67: error: expected ‘(’ before ‘>’ token
+               for(const auto &x : get_messages<typename defs::inp1>(mbs))
+                                                                   ^
+../atomics/Alarm_Monitor.hpp:84:67: error: expected ‘(’ before ‘>’ token
+               for(const auto &x : get_messages<typename defs::inp2>(mbs))
+                                                                   ^
+../atomics/Alarm_Monitor.hpp: At global scope:
+../atomics/Alarm_Monitor.hpp:109:13: error: expected ‘;’ before ‘TIME’
+             TIME time_advance() const { 
+             ^~~~
+../atomics/Alarm_Monitor.hpp:115:13: error: ‘friend’ used outside of class
+             friend std::ostringstream& operator<<(std::ostringstream& os, const typename Alarm_Mon<TIME>::state_type& i) {
+             ^~~~~~
+../atomics/Alarm_Monitor.hpp:115:100: error: ‘TIME’ was not declared in this scope
+      friend std::ostringstream& operator<<(std::ostringstream& os, const typename Alarm_Mon<TIME>::state_type& i) {
+                                                                                             ^~~~
+../atomics/Alarm_Monitor.hpp:115:100: note: suggested alternative: ‘ETIME’
+      friend std::ostringstream& operator<<(std::ostringstream& os, const typename Alarm_Mon<TIME>::state_type& i) {
+                                                                                             ^~~~
+                                                                                                    ETIME
+../atomics/Alarm_Monitor.hpp:115:104: error: template argument 1 is invalid
+  friend std::ostringstream& operator<<(std::ostringstream& os, const typename Alarm_Mon<TIME>::state_type& i) {
+                                                                                             ^
+../atomics/Alarm_Monitor.hpp: In function ‘std::ostringstream& operator<<(std::ostringstream&, const int&)’:
+../atomics/Alarm_Monitor.hpp:116:44: error: request for member ‘type’ in ‘i’, which is of non-class type ‘const int’
+               os << "Current state: " << i.type; 
+                                            ^~~~
+../atomics/Alarm_Monitor.hpp: At global scope:
+../atomics/Alarm_Monitor.hpp:119:9: error: expected declaration before ‘}’ token
+         };     
+         ^
+makefile:21: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+
