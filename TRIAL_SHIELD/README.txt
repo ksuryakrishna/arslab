@@ -1,4 +1,7 @@
 This folder contains the Building Controller model implemented in ECadmium
+
+
+For complete explanation of the model and sample inputs and outputs refer the document "Model explanation.pdf".
 	
 /*************/
 /****STEPS****/
@@ -21,4 +24,3 @@ This folder contains the Building Controller model implemented in ECadmium
 		6.1. Connect the controller and open the terminal in the location of top_model.
 		6.2. Run the model using the instructions: make clean, make embedded, make flash
 		6.3. Give 10 seconds for it to flash.
-
