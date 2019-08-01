@@ -1,7 +1,7 @@
-This folder contains the Building Controller model implemented in ECadmium
+This folder contains the Blind and Lighting Controller model implemented in ECadmium
 
 
-For complete explanation of the model and sample inputs and outputs refer the document "Model explanation.pdf".
+For complete explanation of the model and sample inputs and outputs refer the document "Blind and Lighting controller.pdf".
 	
 /*************/
 /****STEPS****/
@@ -18,9 +18,5 @@ For complete explanation of the model and sample inputs and outputs refer the do
 		Example: cd ../../top_model
 	3 - To compile the model, type in the terminal:
 		make clean; make all
-	4 - To run the model, type in the terminal "./NAME_OF_THE_COMPILED_FILE". For this test you need to type: ./SUHA_BOT_TOP
+	4 - To run the model, type in the terminal "./NAME_OF_THE_COMPILED_FILE". For this test you need to type: ./LIGHT_TOP
 	5 - To check the output of the model, open "outputs" under top_model and check all the text files.
-	6 - To run the model with in embedded mode (real time):
-		6.1. Connect the controller and open the terminal in the location of top_model.
-		6.2. Run the model using the instructions: make clean, make embedded, make flash
-		6.3. Give 10 seconds for it to flash.
